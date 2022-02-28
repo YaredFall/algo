@@ -4,10 +4,11 @@ C:\Users\YaredFall\source\repos\algo\algo1\bin\Debug\netcoreapp3.1\algo1.runtime
 C:\Users\YaredFall\source\repos\algo\algo1\bin\Debug\netcoreapp3.1\algo1.runtimeconfig.dev.json
 C:\Users\YaredFall\source\repos\algo\algo1\bin\Debug\netcoreapp3.1\algo1.dll
 C:\Users\YaredFall\source\repos\algo\algo1\bin\Debug\netcoreapp3.1\algo1.pdb
-C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.csprojAssemblyReference.cache
 C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.AssemblyInfoInputs.cache
 C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.AssemblyInfo.cs
 C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.csproj.CoreCompileInputs.cache
 C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.dll
 C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.pdb
 C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.genruntimeconfig.cache
+C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.csproj.AssemblyReference.cache
+C:\Users\YaredFall\source\repos\algo\algo1\obj\Debug\netcoreapp3.1\algo1.GeneratedMSBuildEditorConfig.editorconfig

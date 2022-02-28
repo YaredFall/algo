@@ -74,19 +74,19 @@ namespace algo1
 
             }
 
-            void AddZeroes(List<BinaryVector> seq)
+            void AddZeroes(List<BinaryVector> sequence)
             {
-                for (int i = 0; i < sequence.Count; i++)
+                for (int i = 0; i < this.sequence.Count; i++)
                 {
-                    seq[i] = new BinaryVector(seq[i].ToString() + '0');
+                    sequence[i] = new BinaryVector(sequence[i].ToString() + '0');
                 }
             }
 
-            void AddOnes(List<BinaryVector> seq)
+            void AddOnes(List<BinaryVector> sequence)
             {
-                for (int i = 0; i < sequence.Count; i++)
+                for (int i = 0; i < this.sequence.Count; i++)
                 {
-                    seq[i] = new BinaryVector(seq[i].ToString() + '1');
+                    sequence[i] = new BinaryVector(sequence[i].ToString() + '1');
                 }
             }
 
@@ -97,7 +97,6 @@ namespace algo1
                     sequence.Add(subsequence[i]);
                 }
             }
-
            
 
             public void Print()
@@ -281,48 +280,53 @@ namespace algo1
             }
         }
 
+        static string ProjectDirectory()
+        {
+            return Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        }
+
         static void Main(string[] args)
         {
             Stopwatch time = new Stopwatch();
             time.Start();
-            GreysCode gc = new GreysCode(22);
+            GreysCode gc = new GreysCode(10);
             time.Stop();
             Console.WriteLine(time.Elapsed);
 
-            //gc.Print();
+            gc.Print();
 
-            if (!true)
+            if (true)
             {
                 Console.WriteLine("Решение примера: ");
                 BasePlacementProblem bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\example.txt");
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 1: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test1.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test1.txt"));
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 2: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test2.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test2.txt"));
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 3: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test3.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test3.txt"));
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 4: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test4.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test4.txt"));
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 5: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test5.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test5.txt"));
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 6: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test6.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test6.txt"));
                 bpp.PrintProblem();
 
                 Console.WriteLine("Тест 7: ");
-                bpp = new BasePlacementProblem(@"C:\Users\YaredFall\source\repos\algo\algo1\tests\test7.txt");
+                bpp = new BasePlacementProblem(Path.Combine(ProjectDirectory(), @"tests\test7.txt"));
                 bpp.PrintProblem();
             }
         }
